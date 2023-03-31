@@ -1,6 +1,12 @@
+const AllPosts = (props) => {
 
-// const DisplayPosts = (props) => {
-//     return (
-        
-//     )
-// }
+    return (
+        <div>
+            {props.allPosts.map(() => {
+                return;
+            })}
+        </div>
+    )
+}
+
+export default AllPosts;
