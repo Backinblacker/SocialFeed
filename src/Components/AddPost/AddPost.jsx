@@ -15,16 +15,16 @@ const AddPost = (props) => {
     }
     
     return (
-        <form onSubmit={handleSubmit} className='form-grid'>
-            <div className="form-group">
+        <form onSubmit={handleSubmit} className='container'>
+            <div className='container'>
                 <label for="username">User Name: </label>
-                <input type="text" class="form-control" id="username" placeholder="User Name" value={userName} onChange={(event) => setUserName(event.target.value)}/>
+                <input type="text" class="form-control input-border" id="username" placeholder="User Name" value={userName} onChange={(event) => setUserName(event.target.value)}/>
             </div>
-            <div className='form-group'>
+            <div className='container'>
                 <label for="post">What's on your mind?</label>
-                <textarea class="form-control" id="post" rows="3" value={post} onChange={(event) => setPost(event.target.value)}/>
+                <textarea class="form-control input-border" id="post" rows="3" value={post} onChange={(event) => setPost(event.target.value)}/>
             </div>
-            <button type='submit' className='btn btn-primary' style={{"margin-top": '1em', "color": "teal"}}>Create Post</button>
+            <button type='submit' className='btn btn-primary' style={{"margin-top": '1em'}}>Create Post</button>
         </form>
     )
 }
