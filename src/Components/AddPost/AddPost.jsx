@@ -22,7 +22,7 @@ const AddPost = (props) => {
             </div>
             <div className='container post-text'>
                 <label for="post">What's on your mind?</label>
-                <textarea class="form-control input-border" id="post" rows="3" value={post} onChange={(event) => setPost(event.target.value)}/>
+                <textarea class="form-control input-border" style={{'width': '891px'}} id="post" rows="3" value={post} onChange={(event) => setPost(event.target.value)}/>
             <button type='submit' className='btn btn-primary' style={{"margin-top": '1em'}}>Create Post</button>
             </div>
         </form>
