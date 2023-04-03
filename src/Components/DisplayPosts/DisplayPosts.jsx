@@ -6,7 +6,7 @@ const DisplayPosts = (props) => {
                     return (
                         <section key={index} className="container">
                             <div><p className="post-text"><h3>@{entry.userName}</h3></p> </div>
-                            <div><p className="post-text"><h3>{entry.post}</h3></p> </div>
+                            <div><p className="post-text"><h3>Post: {entry.post}</h3></p> </div>
                             <div className='liked'><h3>{entry.liked}</h3></div>
                         </section>
                     );
