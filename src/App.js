@@ -1,23 +1,28 @@
-// import './App.css';
+import './App.css'
 import { useState } from 'react';
-import './Components/AddPost/AddPost.jsx';
+import AddPost from './Components/AddPost/AddPost';
 import NavBar from './Components/NavigationBar/NavigationBar';
-import './Components/DisplayPosts/DisplayPosts.jsx'
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts.jsx';
 function App() {
 
-  const {posts, setPosts} = useState([]);
+  const [entries, setEntries] = useState([{userName: 'Bender', post: 'Kill All Humans!'}, {userName: 'El Barto', post: 'Have a cow man!'}]);
 
   function newPost(post){
-    let tempPost =[post, ...posts]
-    setPosts(tempPost)
+    let tempPost =[...entries, post];
+    setEntries(tempPost);
   }
   return (
     <div>
       <header>
         <NavBar />
       </header>
-      <div>
-        <AddPost newPost={newPost}/>
+      <div className='container-fluid'>
+        <div className='border'>
+          <AddPost newPost={newPost}/>
+        </div>
+        <div className='border'>
+          <DisplayPosts parentEntries={entries}/>
+        </div>  
       </div>
     </div>
   );
