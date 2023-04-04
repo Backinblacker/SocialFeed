@@ -47,3 +47,10 @@
     padding: 10px 20px;
     border: 2px solid #333;
  }
+
+ .liked{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+ }

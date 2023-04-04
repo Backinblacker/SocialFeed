@@ -13,7 +13,7 @@ Total Weighted Project Points: /50
 Main Stories
 
 (5 points): As a developer, I want to make at least 7 good, consistent commits.
-<!-- (5 points): As a developer, I want to use the Create-React-App to create my React project. -->
+(5 points): As a developer, I want to use the Create-React-App to create my React project.
 (5 points): As a developer, I want to display all posts (name, body, & liked status) within a feed on the main page.
 (10 points): As a developer, I want to create “like” and “dislike” buttons so that I can visually show & toggle between “liking” and “disliking” a post.
 (10 points): As a developer, I want to create a form on a separate component so that I can add a new post to the main feed.
