@@ -19,8 +19,31 @@
     text-align: justify;
     width: 900px;
 }
-.liked{
-    display: flex;
-    justify-content: flex-end;
-    gap: 7px;
-}
+.inactive {
+    border: none; 
+    outline: none;
+    background-color: black;
+    font-size: 10px;
+    font-weight: bold;
+    color: teal;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 20px;
+    border: 2px solid #333;
+ }
+ .like-button:hover {
+    color: #fff;
+    background-color: #333;
+ }
+ .active {
+    color: black;
+    background-color: rgb(184, 115, 51);
+    border-color: black;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 20px;
+    border: 2px solid #333;
+ }
