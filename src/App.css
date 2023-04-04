@@ -16,7 +16,3 @@ html{
     background-color: rgb(184, 115, 51);
     font-weight: bold;
 }
-
-button:hover {
-    box-shadow: black;
-}
