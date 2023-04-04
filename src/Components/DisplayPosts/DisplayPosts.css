@@ -19,3 +19,8 @@
     text-align: justify;
     width: 900px;
 }
+.liked{
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+}
