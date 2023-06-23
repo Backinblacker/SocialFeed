@@ -1,6 +1,7 @@
 html{
-    background-color:black;
+    background-color: black;
 }
+
 .border{
     display: flex;
     margin: 3em;
@@ -9,6 +10,7 @@ html{
 }
 
 .submit-button{
+    width: 120px;
     color: black;
     padding: 15px 12px;
     text-align: center;
